@@ -1,13 +1,14 @@
 package OOP_encapsulation;
 
 public class Browser {
-	
+
 	public void launchBrowser() {
 		System.out.println("Launch browser");
 		checkChromeService();
 		checkOSCompatible();
 		checkRAMSize();
 		checkChromeVersion();
+		System.out.println("Chrome browser launched");
 	}
 
 	private void checkOSCompatible() {

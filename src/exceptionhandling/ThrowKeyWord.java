@@ -3,14 +3,20 @@ package exceptionhandling;
 public class ThrowKeyWord {
 
 	public static void main(String[] args) {
-		
+
+		getInfo();
+	}
+
+	public static void getInfo() {
+		String data = null;
 		try {
-			throw new Exception("DATANOFOUNDEXCEPTION");			
+			if (data == null) {
+				throw new Exception("DATANOFOUNDEXCEPTION");
+			}
 		} catch (Exception e) {
-			System.out.println("data not found exception ");
+			System.out.println("Data not found exception... ");
 			e.printStackTrace();
 		}
 		System.out.println("bye");
 	}
-
 }

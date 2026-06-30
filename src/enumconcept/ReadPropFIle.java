@@ -32,5 +32,4 @@ public class ReadPropFIle {
 			System.out.println("Running headless....");
 		}
 	}
-
 }

@@ -1,6 +1,7 @@
 package constructorconcepts;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class TestCompany {
 
@@ -14,14 +15,15 @@ public class TestCompany {
 		System.out.println(
 				cpm3.name + " , " + cpm3.empCount + " , " + cpm3.hq + " , " + cpm3.ceo + " , " + cpm3.sharePrice);
 		System.out.println(cpm4.name + " , " + cpm4.empCount + " , " + cpm4.hq + " , " + cpm4.ceo);
-		
-		Customer c1=new Customer("Utkal", "098787", "utkal@gmail.com");
-		ArrayList<String> toOrderList=new ArrayList<>();
+
+		Customer c1 = new Customer("Utkal", "098787", "utkal@gmail.com");
+		System.out.println(c1);
+		List<String> toOrderList = new ArrayList<>();
 		toOrderList.add("Vacum");
 		toOrderList.add("touch pen");
 		toOrderList.add("fridge");
-		Customer c2=new Customer("archana", "sahu", toOrderList);
-		System.out.println(c2.firstname+"  , "+c2.lastname);
+		Customer c2 = new Customer("archana", "sahu", toOrderList);
+		System.out.println(c2.firstname + "  , " + c2.lastname);
 		System.out.println(c2.orderList);
 	}
 

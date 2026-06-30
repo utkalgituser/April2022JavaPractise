@@ -57,8 +57,8 @@ public class Application {
 			// Second way
 			deviceArr = new String[] { "samsung", "moto", "iphone", "Realme", "OPPO" };
 			// third way
-			deviceArr = "samsung,moto,iphone,Realme,OPPO".split(","); // split will array of string
-			// fourth way 
+			deviceArr = "samsung,moto,iphone,Realme,OPPO".split(","); // split will give array of string
+			// fourth way
 			list = Arrays.asList("samsung", "moto", "iphone", "Realme", "OPPO");
 			deviceArr = list.toArray(new String[list.size()]);
 

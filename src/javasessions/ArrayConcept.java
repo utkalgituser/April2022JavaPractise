@@ -9,6 +9,8 @@ public class ArrayConcept {
 		int[] i = new int[4];
 		int len = i.length;
 		System.out.println("length is = " + len);
+		// li - lowest index 
+		// hi - highest index 
 		int li = 0;
 		int hi = 3;
 		System.out.println("hi = " + (len - 1));
@@ -17,7 +19,7 @@ public class ArrayConcept {
 		i[1] = 20;
 		i[2] = 30;
 		i[3] = 40;
-		// System.out.println(i[4]); // java.lang.ArrayIndexOutOfBoundsException:
+		// System.out.println(i[4]); // java.lang.ArrayIndexOutOfBoundsException
 		int[] marks = new int[4];
 		marks[0] = 10;
 		marks[1] = 20;

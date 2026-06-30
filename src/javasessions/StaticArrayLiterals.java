@@ -2,14 +2,14 @@ package javasessions;
 
 import java.util.Arrays;
 
-public class SaticArrayLiterals {
+public class StaticArrayLiterals {
 	String[] menuList;
 	
 	public static void main(String[] args) {
-		SaticArrayLiterals sal=new SaticArrayLiterals();
+		StaticArrayLiterals sal=new StaticArrayLiterals();
 		String[] arr=sal.getPageMenuLinks("loginpage");
 		System.out.println(Arrays.toString(arr));
-		sal=new SaticArrayLiterals();
+		sal=new StaticArrayLiterals();
 		Arrays.toString(sal.getPageMenuLinks("cartpage"));
 	}
 

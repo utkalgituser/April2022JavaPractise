@@ -4,7 +4,7 @@ public enum Environment {
 	
 	QA("qa"),
 	DEV("dev"),
-	STAGE("stage"),
+	STAGE("amazonstage"),
 	UAT("uat"),
 	PROD("prod"),
 	PI(3);
@@ -15,16 +15,16 @@ public enum Environment {
 	Environment(String env) {
 		this.envName = env;
 	}
-	
+
 	Environment(int i) {
-		this.intVal=i;
+		this.intVal = i;
 	}
 
-	public String getEnvValue(){
+	public String getEnvValue() {
 		return this.envName;
 	}
-	
-	public int getIntValue(){
+
+	public int getIntValue() {
 		return this.intVal;
 	}
 }

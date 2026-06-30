@@ -6,17 +6,9 @@ public class Company {
 	String hq;
 	String ceo;
 	double sharePrice;
-	
+
 	public Company(String name) {
 		this.name = name;
-	}
-
-	public Company(String name, int empCount, String hq, String ceo, double sharePrice) {
-		this.name = name;
-		this.empCount = empCount;
-		this.hq = hq;
-		this.ceo = ceo;
-		this.sharePrice = sharePrice;
 	}
 
 	public Company(String name, String hq) {
@@ -29,6 +21,19 @@ public class Company {
 		this.empCount = empCount;
 		this.sharePrice = sharePrice;
 	}
-	
-	
+
+	public Company(String name, int empCount, String hq, String ceo, double sharePrice) {
+		this.name = name;
+		this.empCount = empCount;
+		this.hq = hq;
+		this.ceo = ceo;
+		this.sharePrice = sharePrice;
+	}
+
+	@Override
+	public String toString() {
+		return "Company [name=" + name + ", empCount=" + empCount + ", hq=" + hq + ", ceo=" + ceo + ", sharePrice="
+				+ sharePrice + "]";
+	}
+
 }

@@ -2,18 +2,18 @@ package oop_interface;
 
 public class FortisHospital extends Medical implements USMedical, UKMedical, IndianMedical {
 
-	public static int min_free=10; 
+	public static int min_free = 10;
 
 	@Override
 	public void cardioServices() {
 		System.out.println("FH - cardioServices");
 	}
-	
+
 	// overloading of overridden method is possible
 	public void cardioServices(int a) {
 		System.out.println("FH - cardioServices");
 	}
-	
+
 	@Override
 	public void physioServices() {
 		System.out.println("FH - physioServices");
@@ -77,13 +77,14 @@ public class FortisHospital extends Medical implements USMedical, UKMedical, Ind
 	@Override
 	public void opthaService() {
 		UKMedical.super.opthaService();
+		USMedical.super.opthaService();
 		System.out.println("FH - medicalResearchServ");
 	}
 
 	@Override
 	public void neuroServices(int a) {
 		System.out.println("FH - neuroServices");
-		
+
 	}
 
 	@Override

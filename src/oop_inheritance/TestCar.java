@@ -50,12 +50,11 @@ public class TestCar {
 		Vehicle c2 = new BMW();
 		c2.aeroDynamic();
 		c2.engine();
-		
+
 		// Down casting. Compile time will work
 		// will get ClassCastException at run time
-		BMW b1=(BMW) new Car();
-		
-		
+		BMW b1 = (BMW) new Car();
+
 		// University, Technical University, Colleges (Home Work)
 		// call constructor chaining till super class
 	}

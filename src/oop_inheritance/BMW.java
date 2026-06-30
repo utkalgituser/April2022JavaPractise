@@ -14,22 +14,22 @@ public class BMW extends Car {
 	// 7. Multilevel is inheritance is allowed in java
 
 	// 8. If a static method is available in parent class and same is available in
-	// child class, then this is called method hiding. 
+	// child class, then this is called method hiding.
 	// final, static and private methods can't be overridden
-	// final: 
+	// final:
 	// 1. to provide constant
-	//2. to prevent inheritance
-	// 3. to prevent method overriding 
-	
-	int speed =200;
-	
+	// 2. to prevent inheritance
+	// 3. to prevent method overriding
+
+	int speed = 200;
+
 	public BMW() {
 		// Super should be the first line of child class constructor
 		// can be used inside methods also
 		super();
 		System.out.println("testing");
 	}
-	
+
 	@Override
 	public void start() {
 		System.out.println("BMW -start");
@@ -47,10 +47,9 @@ public class BMW extends Car {
 	public static void run() {
 		System.out.println("BMW run");
 	}
-	
+
 	// it's a separate private method @override can't be used
 	private void billing() {
 		System.out.println("BMW billing");
-
 	}
 }
